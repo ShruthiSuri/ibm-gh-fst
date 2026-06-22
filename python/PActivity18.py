@@ -1,0 +1,11 @@
+import pandas as pd
+data=pd.read_csv('Accounts.csv')
+print(data)
+print("Print the values only in the Usernames column")
+print(data["Usernames"])
+print("Print the username and password of the second row")
+print(data["Usernames"][1] ,data["Password"][1])
+print("Sort the Usernames column data in ascending order and print data")
+print(data.sort_values("Usernames"))
+print("Sort the Passwords column in descending order and print data")
+print(data.sort_values("Password",ascending=False))
